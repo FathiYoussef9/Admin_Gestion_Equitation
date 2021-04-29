@@ -14,6 +14,10 @@ public class Seances {
     private boolean isDone;
     private int paymentID;
     private String comments;
+    private String userFName;
+    private String userLName;
+    private String ClientfName;
+    private String ClientlName;
 
     public int getSeanceID() {
         return seanceID;
@@ -87,10 +91,54 @@ public class Seances {
         this.comments = comments;
     }
 
+    public String getUserFName() {
+        return userFName;
+    }
+
+    public void setUserFName(String userFName) {
+        this.userFName = userFName;
+    }
+
+    public String getUserLName() {
+        return userLName;
+    }
+
+    public void setUserLName(String userLName) {
+        this.userLName = userLName;
+    }
+
+    public String getClientfName() {
+        return ClientfName;
+    }
+
+    public void setClientfName(String ClientfName) {
+        this.ClientfName = ClientfName;
+    }
+
+    public String getClientlName() {
+        return ClientlName;
+    }
+
+    public void setClientlName(String ClientlName) {
+        this.ClientlName = ClientlName;
+    }
+
     public Seances() {
     }
 
     public Seances(JSONObject json) throws JSONException {
-
+         seanceID=json.getInt("seanceID");
+         seanceGrpID=json.getInt("seanceGrpID");
+         clientID=json.getInt("clientID");
+         monitorID=json.getInt("monitorID");
+         startDate=json.getString("startDate");
+         durationMinut=json.getInt("durationMinut");
+         isDone=json.getBoolean("isDone");
+         paymentID=json.getInt("paymentID");
+         comments=json.getString("comments");
+         userFName=json.getString("userFName");
+         userLName=json.getString("userLName");
+         ClientfName=json.getString("fName");
+         ClientlName=json.getString("lName");
     }
 }
