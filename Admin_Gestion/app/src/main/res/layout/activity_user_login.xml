@@ -9,7 +9,7 @@
     <View
         android:id="@+id/TopView"
         android:layout_width="0dp"
-        android:layout_height="170dp"
+        android:layout_height="260dp"
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,7 +18,7 @@
     <View
         android:id="@+id/view2"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="70dp"
         android:background="@drawable/wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,14 +26,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="280dp"
-        android:layout_height="128dp"
+        android:layout_width="320dp"
+        android:layout_height="228dp"
         app:layout_constraintBottom_toBottomOf="@+id/TopView"
-        app:layout_constraintEnd_toEndOf="@+id/TopView"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/TopView"
         app:layout_constraintTop_toTopOf="@+id/TopView"
-        app:layout_constraintVertical_bias="0.809"
+        app:layout_constraintVertical_bias="0.781"
         app:srcCompat="@drawable/horse" />
 
     <EditText
