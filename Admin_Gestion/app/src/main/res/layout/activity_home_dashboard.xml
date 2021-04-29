@@ -17,8 +17,9 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
             app:title="Dashboard"
-            app:expandedTitleMarginStart="30dp"
-            app:expandedTitleMarginEnd="64dp">
+            app:expandedTitleMarginStart="10dp"
+            app:expandedTitleMarginEnd="14dp"
+            >
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -52,7 +53,7 @@
            android:layout_height="match_parent"
            tools:context="com.demotxt.droidsrce.homedashboard.Home"
            android:orientation="vertical"
-           android:padding="10dp"
+           android:padding="30dp"
            android:background="#fcfcfc"
            android:gravity="center"
            android:id="@+id/ll">
@@ -240,7 +241,7 @@
                    android:foreground="?android:attr/selectableItemBackground"
                    android:clickable="true"
                    android:layout_width="340dp"
-                   android:layout_height="150dp"
+                   android:layout_height="190dp"
                    android:layout_margin="10dp">
                    <LinearLayout
 
