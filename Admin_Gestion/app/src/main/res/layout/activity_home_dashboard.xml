@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
-            app:title="Dashboard"
+            app:title=""
             app:expandedTitleMarginStart="10dp"
             app:expandedTitleMarginEnd="14dp"
             >
@@ -66,7 +66,7 @@
                <androidx.cardview.widget.CardView
                    android:foreground="?android:attr/selectableItemBackground"
                    android:clickable="true"
-                   android:id="@+id/bankcardId"
+                   android:id="@+id/EmploiTempsId"
                    android:layout_width="160dp"
                    android:layout_height="190dp"
                    android:layout_margin="10dp">
@@ -81,12 +81,13 @@
                            android:background="@drawable/cerclebackgroundpurple"
                            android:src="@drawable/ic_baseline_access_time_24"
                            android:padding="10dp"/>
+
                        <TextView
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
-                           android:textStyle="bold"
                            android:layout_marginTop="10dp"
-                           android:text="Banking"/>
+                           android:text="Emploi du Temps"
+                           android:textStyle="bold" />
                        <View
                            android:layout_width="match_parent"
                            android:layout_height="1dp"
@@ -96,7 +97,7 @@
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:gravity="center"
-                           android:text="Check your bank activities"
+                           android:text="Gestion des emplois du temps"
                            android:padding="5dp"
                            android:textColor="@android:color/darker_gray"/>
 
@@ -105,9 +106,11 @@
                <androidx.cardview.widget.CardView
                    android:foreground="?android:attr/selectableItemBackground"
                    android:clickable="true"
+                   android:id="@+id/TacheId"
                    android:layout_width="160dp"
                    android:layout_height="190dp"
                    android:layout_margin="10dp">
+
                    <LinearLayout
                        android:layout_width="match_parent"
                        android:layout_height="match_parent"
@@ -124,7 +127,7 @@
                            android:layout_height="wrap_content"
                            android:textStyle="bold"
                            android:layout_marginTop="10dp"
-                           android:text="Ideas"/>
+                           android:text="Taches"/>
                        <View
                            android:layout_width="match_parent"
                            android:layout_height="1dp"
@@ -134,7 +137,7 @@
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:gravity="center"
-                           android:text="Check your bank activities"
+                           android:text="Gestion des taches"
                            android:padding="5dp"
                            android:textColor="@android:color/darker_gray"/>
 
@@ -151,6 +154,7 @@
                <androidx.cardview.widget.CardView
                    android:foreground="?android:attr/selectableItemBackground"
                    android:clickable="true"
+                   android:id="@+id/SeancesId"
                    android:layout_width="160dp"
                    android:layout_height="190dp"
                    android:layout_margin="10dp">
@@ -163,14 +167,14 @@
                            android:layout_width="64dp"
                            android:layout_height="64dp"
                            android:background="@drawable/cerclebackgroundgreen"
-                           android:src="@drawable/ic_baseline_assignment_turned_in_24"
+                           android:src="@drawable/ic_baseline_add_circle_outline_24"
                            android:padding="10dp"/>
                        <TextView
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:textStyle="bold"
                            android:layout_marginTop="10dp"
-                           android:text="Add"/>
+                           android:text="Séances"/>
                        <View
                            android:layout_width="match_parent"
                            android:layout_height="1dp"
@@ -180,7 +184,7 @@
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:gravity="center"
-                           android:text="Check your bank activities"
+                           android:text="Ajouter une Séance"
                            android:padding="5dp"
                            android:textColor="@android:color/darker_gray"/>
 
@@ -189,6 +193,7 @@
                <androidx.cardview.widget.CardView
                    android:foreground="?android:attr/selectableItemBackground"
                    android:clickable="true"
+                   android:id="@+id/PointageId"
                    android:layout_width="160dp"
                    android:layout_height="190dp"
                    android:layout_margin="10dp">
@@ -204,13 +209,13 @@
                            android:layout_height="64dp"
                            android:background="@drawable/cerclebackgroundyello"
                            android:padding="10dp"
-                           android:src="@drawable/ic_baseline_assignment_turned_in_24" />
+                           android:src="@drawable/ic_baseline_people_alt_24" />
 
                        <TextView
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:layout_marginTop="10dp"
-                           android:text="Links"
+                           android:text="Pointage"
                            android:textStyle="bold" />
 
                        <View
@@ -224,7 +229,7 @@
                            android:layout_height="wrap_content"
                            android:gravity="center"
                            android:padding="5dp"
-                           android:text="Check your bank activities"
+                           android:text="le pointage des présences"
                            android:textColor="@android:color/darker_gray" />
 
                    </LinearLayout>
@@ -238,6 +243,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content">
                <androidx.cardview.widget.CardView
+                   android:id="@+id/GestionUserId"
                    android:foreground="?android:attr/selectableItemBackground"
                    android:clickable="true"
                    android:layout_width="340dp"
@@ -253,14 +259,14 @@
                            android:layout_width="64dp"
                            android:layout_height="64dp"
                            android:background="@drawable/cerclebackgroundpurple"
-                           android:src="@drawable/ic_baseline_assignment_turned_in_24"
+                           android:src="@drawable/ic_baseline_person_add_24"
                            android:padding="10dp"/>
                        <TextView
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:textStyle="bold"
                            android:layout_marginTop="10dp"
-                           android:text="Add"/>
+                           android:text="Users"/>
                        <View
                            android:layout_width="match_parent"
                            android:layout_height="1dp"
@@ -270,7 +276,7 @@
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:gravity="center"
-                           android:text="Check your bank activities"
+                           android:text="Gestion des utilisateurs"
                            android:padding="5dp"
                            android:textColor="@android:color/darker_gray"/>
 
