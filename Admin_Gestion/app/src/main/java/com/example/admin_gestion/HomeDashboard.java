@@ -33,8 +33,12 @@ public class HomeDashboard extends AppCompatActivity implements View.OnClickList
         Intent i;
 
         switch (v.getId()){
-            case R.id.EmploiTempsId : i = new Intent(this,emploi_du_temps.class);break;
-            case R.id.TacheId : i = new Intent(this,Taches.class);break;
+            case R.id.EmploiTempsId : i = new Intent(this,emploi_du_temps.class);startActivity(i); break;
+            case R.id.TacheId : i = new Intent(this,Taches.class);startActivity(i);break;
+            case R.id.SeancesId : i = new Intent(this,Seances.class);startActivity(i);break;
+            case R.id.PointageId : i = new Intent(this,Pointage.class);startActivity(i);break;
+            case R.id.GestionUserId : i = new Intent(this,users.class);startActivity(i);break;
+            default:break;
         }
     }
 }
