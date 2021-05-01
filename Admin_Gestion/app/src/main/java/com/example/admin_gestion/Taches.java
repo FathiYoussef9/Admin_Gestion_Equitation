@@ -24,11 +24,15 @@ public class Taches extends AppCompatActivity {
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         //Add fragments here
-        adapter.AddFragment(new FragmentAllTasks(),"les Taches");
-        adapter.AddFragment(new FragmentAddTask(),"Ajouter");
-        adapter.AddFragment(new FragmentSearchTask(),"Recherche");
+        adapter.AddFragment(new FragmentAllTasks(),"");
+        adapter.AddFragment(new FragmentAddTask(),"");
+        adapter.AddFragment(new FragmentSearchTask(),"");
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_assignment_turned_in_24);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_add_circle_outline_24);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_baseline_search_24);
     }
 }
