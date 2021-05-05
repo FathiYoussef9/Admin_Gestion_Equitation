@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeDashboard"
-    android:background="#fcfcfc">
+    android:background="@drawable/ic_wavehome"
+    tools:context=".HomeDashboard">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="300dp">
 
@@ -15,11 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="exitUntilCollapsed|scroll"
-            app:title=""
-            app:expandedTitleMarginStart="10dp"
             app:expandedTitleMarginEnd="14dp"
-            >
+            app:expandedTitleMarginStart="10dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="">
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -29,265 +29,290 @@
 
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                app:layout_collapseMode="pin"/>
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
+                android:layout_height="52dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
 
     </com.google.android.material.appbar.AppBarLayout>
 
 
-   <androidx.core.widget.NestedScrollView
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
-       <LinearLayout
-           xmlns:android="http://schemas.android.com/apk/res/android"
-           xmlns:app="http://schemas.android.com/apk/res-auto"
-           xmlns:tools="http://schemas.android.com/tools"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           tools:context="com.demotxt.droidsrce.homedashboard.Home"
-           android:orientation="vertical"
-           android:padding="30dp"
-           android:background="#fcfcfc"
-           android:gravity="center"
-           android:id="@+id/ll">
-           <LinearLayout
-               android:clipToPadding="false"
-               android:gravity="center"
-               android:orientation="horizontal"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-               <androidx.cardview.widget.CardView
-                   android:foreground="?android:attr/selectableItemBackground"
-                   android:clickable="true"
-                   android:id="@+id/EmploiTempsId"
-                   android:layout_width="160dp"
-                   android:layout_height="190dp"
-                   android:layout_margin="10dp">
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:orientation="vertical"
-                       android:gravity="center">
-                       <ImageView
-                           android:layout_width="64dp"
-                           android:layout_height="64dp"
-                           android:background="@drawable/cerclebackgroundpurple"
-                           android:src="@drawable/ic_baseline_access_time_24"
-                           android:padding="10dp"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp"
+            tools:context="com.demotxt.droidsrce.homedashboard.Home">
 
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:layout_marginTop="10dp"
-                           android:text="Emploi du Temps"
-                           android:textStyle="bold" />
-                       <View
-                           android:layout_width="match_parent"
-                           android:layout_height="1dp"
-                           android:background="@color/lightgray"
-                           android:layout_margin="10dp"/>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:gravity="center"
-                           android:text="Gestion des emplois du temps"
-                           android:padding="5dp"
-                           android:textColor="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-                   </LinearLayout>
-               </androidx.cardview.widget.CardView>
-               <androidx.cardview.widget.CardView
-                   android:foreground="?android:attr/selectableItemBackground"
-                   android:clickable="true"
-                   android:id="@+id/TacheId"
-                   android:layout_width="160dp"
-                   android:layout_height="190dp"
-                   android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/EmploiTempsId"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
 
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:orientation="vertical"
-                       android:gravity="center">
-                       <ImageView
-                           android:layout_width="64dp"
-                           android:layout_height="64dp"
-                           android:background="@drawable/cerclebackgroundpink"
-                           android:src="@drawable/ic_baseline_assignment_turned_in_24"
-                           android:padding="10dp"/>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:textStyle="bold"
-                           android:layout_marginTop="10dp"
-                           android:text="Taches"/>
-                       <View
-                           android:layout_width="match_parent"
-                           android:layout_height="1dp"
-                           android:background="@color/lightgray"
-                           android:layout_margin="10dp"/>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:gravity="center"
-                           android:text="Gestion des taches"
-                           android:padding="5dp"
-                           android:textColor="@android:color/darker_gray"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                   </LinearLayout>
-               </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundpurple"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_access_time_24" />
 
-           </LinearLayout>
-           <LinearLayout
-               android:clipToPadding="false"
-               android:gravity="center"
-               android:orientation="horizontal"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-               <androidx.cardview.widget.CardView
-                   android:foreground="?android:attr/selectableItemBackground"
-                   android:clickable="true"
-                   android:id="@+id/SeancesId"
-                   android:layout_width="160dp"
-                   android:layout_height="190dp"
-                   android:layout_margin="10dp">
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:orientation="vertical"
-                       android:gravity="center">
-                       <ImageView
-                           android:layout_width="64dp"
-                           android:layout_height="64dp"
-                           android:background="@drawable/cerclebackgroundgreen"
-                           android:src="@drawable/ic_baseline_add_circle_outline_24"
-                           android:padding="10dp"/>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:textStyle="bold"
-                           android:layout_marginTop="10dp"
-                           android:text="Séances"/>
-                       <View
-                           android:layout_width="match_parent"
-                           android:layout_height="1dp"
-                           android:background="@color/lightgray"
-                           android:layout_margin="10dp"/>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:gravity="center"
-                           android:text="Ajouter une Séance"
-                           android:padding="5dp"
-                           android:textColor="@android:color/darker_gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Emploi du Temps"
+                            android:textStyle="bold" />
 
-                   </LinearLayout>
-               </androidx.cardview.widget.CardView>
-               <androidx.cardview.widget.CardView
-                   android:foreground="?android:attr/selectableItemBackground"
-                   android:clickable="true"
-                   android:id="@+id/PointageId"
-                   android:layout_width="160dp"
-                   android:layout_height="190dp"
-                   android:layout_margin="10dp">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
 
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:gravity="center"
-                       android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Gestion des emplois du temps"
+                            android:textColor="@android:color/darker_gray" />
 
-                       <ImageView
-                           android:layout_width="64dp"
-                           android:layout_height="64dp"
-                           android:background="@drawable/cerclebackgroundyello"
-                           android:padding="10dp"
-                           android:src="@drawable/ic_baseline_people_alt_24" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:layout_marginTop="10dp"
-                           android:text="Pointage"
-                           android:textStyle="bold" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/TacheId"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
 
-                       <View
-                           android:layout_width="match_parent"
-                           android:layout_height="1dp"
-                           android:layout_margin="10dp"
-                           android:background="@color/lightgray" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:gravity="center"
-                           android:padding="5dp"
-                           android:text="le pointage des présences"
-                           android:textColor="@android:color/darker_gray" />
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundpink"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_assignment_turned_in_24" />
 
-                   </LinearLayout>
-               </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Taches"
+                            android:textStyle="bold" />
 
-           </LinearLayout>
-           <LinearLayout
-               android:clipToPadding="false"
-               android:gravity="center"
-               android:orientation="horizontal"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-               <androidx.cardview.widget.CardView
-                   android:id="@+id/GestionUserId"
-                   android:foreground="?android:attr/selectableItemBackground"
-                   android:clickable="true"
-                   android:layout_width="340dp"
-                   android:layout_height="190dp"
-                   android:layout_margin="10dp">
-                   <LinearLayout
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
 
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:orientation="vertical"
-                       android:gravity="center">
-                       <ImageView
-                           android:layout_width="64dp"
-                           android:layout_height="64dp"
-                           android:background="@drawable/cerclebackgroundpurple"
-                           android:src="@drawable/ic_baseline_person_add_24"
-                           android:padding="10dp"/>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:textStyle="bold"
-                           android:layout_marginTop="10dp"
-                           android:text="Users"/>
-                       <View
-                           android:layout_width="match_parent"
-                           android:layout_height="1dp"
-                           android:background="@color/lightgray"
-                           android:layout_margin="10dp"/>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:gravity="center"
-                           android:text="Gestion des utilisateurs"
-                           android:padding="5dp"
-                           android:textColor="@android:color/darker_gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Gestion des taches"
+                            android:textColor="@android:color/darker_gray" />
 
-                   </LinearLayout>
-               </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/SeancesId"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundgreen"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Séances"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Ajouter une Séance"
+                            android:textColor="@android:color/darker_gray" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PointageId"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundyello"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_people_alt_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Pointage"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="le pointage des présences"
+                            android:textColor="@android:color/darker_gray" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/GestionUserId"
+                    android:layout_width="340dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundpurple"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_person_add_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Users"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Gestion des utilisateurs"
+                            android:textColor="@android:color/darker_gray" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
-           </LinearLayout>
-       </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
 
 
-   </androidx.core.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

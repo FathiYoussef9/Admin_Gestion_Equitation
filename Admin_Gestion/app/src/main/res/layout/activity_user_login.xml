@@ -102,7 +102,7 @@
         android:layout_marginTop="16dp"
         android:text="Mot de passe oublié?"
         android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
