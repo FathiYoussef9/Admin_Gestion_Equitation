@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!--  Single List Item Design -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/invoices_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="Nom :"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="xx"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="Email :"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="xx"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="Phone :"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="x"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

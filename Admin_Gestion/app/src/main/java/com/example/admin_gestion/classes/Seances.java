@@ -133,7 +133,7 @@ public class Seances {
          monitorID=json.getInt("monitorID");
          startDate=json.getString("startDate");
          durationMinut=json.getInt("durationMinut");
-         isDone=json.getBoolean("isDone");
+         isDone = json.getString("isDone").equals("1");
          paymentID=json.getInt("paymentID");
          comments=json.getString("comments");
          userFName=json.getString("userFName");

@@ -1,7 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightgray">
+    tools:ignore="MissingDefaultResource">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
-</LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/monitor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Salarie:" />
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/monitor"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:hint="Title"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp" />
+                <EditText
+                    android:id="@+id/detail2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:hint="Detail"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="236dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    tools:ignore="MissingConstraints">
+                    <Button
+                        android:id="@+id/button_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Choisir la date" />
+                    <TextView
+                        android:id="@+id/editText_date"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textSize="18dp"
+                        android:hint="Date"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    tools:ignore="MissingConstraints">
+
+                    <Button
+                        android:id="@+id/button_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Choisir l'heure" />
+                    <TextView
+                        android:id="@+id/editText_heure"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="Heure"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black_overlay"
+                            android:textSize="18dp"
+                            android:text="Duration" />
+                        <NumberPicker
+                            android:id="@+id/durationtache"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Repitition"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <NumberPicker
+                            android:id="@+id/repititiontache"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="Ajouter" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>
