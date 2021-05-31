@@ -64,8 +64,9 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
+
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/EmploiTempsId"
+                    android:id="@+id/SeancesId"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
@@ -81,15 +82,15 @@
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundpurple"
+                            android:background="@drawable/cerclebackgroundgreen"
                             android:padding="10dp"
-                            android:src="@drawable/ic_baseline_access_time_24" />
+                            android:src="@drawable/ic_baseline_add_circle_outline_24" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Emploi du Temps"
+                            android:text="Séances"
                             android:textStyle="bold" />
 
                         <View
@@ -103,11 +104,12 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Gestion des emplois du temps"
+                            android:text="Emploi du Temps"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/TacheId"
@@ -163,8 +165,9 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
+
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/SeancesId"
+                    android:id="@+id/EmploiTempsId"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
@@ -180,15 +183,15 @@
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundgreen"
+                            android:background="@drawable/cerclebackgroundpurple"
                             android:padding="10dp"
-                            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+                            android:src="@drawable/ic_baseline_access_time_24" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Séances"
+                            android:text="Emploi du Temps"
                             android:textStyle="bold" />
 
                         <View
@@ -202,11 +205,13 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Ajouter une Séance"
+                            android:text="Gestion des emplois du temps"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
+
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/PointageId"

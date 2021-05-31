@@ -4,7 +4,8 @@
     android:id="@+id/invoices_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/border_standard">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -13,7 +14,7 @@
             android:layout_height="wrap_content"
             android:padding="10dip"
             android:text="Titre :"
-            android:textColor="@android:color/holo_blue_light"
+            android:textColor="@color/colorPrimary"
             android:textSize="18dip"
             android:textStyle="bold" />
         <TextView
@@ -33,7 +34,7 @@
             android:layout_height="wrap_content"
             android:padding="10dip"
             android:text="Salarie :"
-            android:textColor="@android:color/holo_blue_light"
+            android:textColor="@color/colorPrimary"
             android:textSize="18dip"
             android:textStyle="bold" />
         <TextView
@@ -53,7 +54,7 @@
         android:layout_height="wrap_content"
         android:padding="10dip"
         android:text="Date debut :"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@color/colorPrimary"
         android:textSize="18dip"
         android:textStyle="bold" />
     <TextView
@@ -74,7 +75,7 @@
             android:layout_height="wrap_content"
             android:padding="10dip"
             android:text="Detail :"
-            android:textColor="@android:color/holo_blue_light"
+            android:textColor="@color/colorPrimary"
             android:textSize="18dip"
             android:textStyle="bold" />
 
@@ -95,7 +96,7 @@
             android:layout_height="wrap_content"
             android:padding="10dip"
             android:text="Duree :"
-            android:textColor="@android:color/holo_blue_light"
+            android:textColor="@color/colorPrimary"
             android:textSize="18dip"
             android:textStyle="bold" />
 

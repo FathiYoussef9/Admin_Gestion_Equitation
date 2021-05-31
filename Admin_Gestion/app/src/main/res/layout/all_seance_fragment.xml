@@ -3,11 +3,29 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightgray">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:drawablePadding="16dp"
+        android:paddingLeft="120dp"
+        android:paddingTop="16dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="16dp"
+        android:text="Emploi du Temps"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:divider="@android:color/transparent"
         android:dividerHeight="10.0sp"
-        android:id="@+id/ListSeance"/>
+        android:id="@+id/ListSeance"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"    />
 </LinearLayout>
