@@ -20,7 +20,7 @@ public class FragmentAddSeance extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.add_task_fragment,container,false);
+        v = inflater.inflate(R.layout.add_seance_fragment,container,false);
         return v;
     }
 }
