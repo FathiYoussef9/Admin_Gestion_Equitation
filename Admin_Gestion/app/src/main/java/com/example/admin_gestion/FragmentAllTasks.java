@@ -79,7 +79,7 @@ public class FragmentAllTasks extends Fragment {
 
         View view = getView();
         if (view != null) {
-            JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, "https://projet-aymax.000webhostapp.com/get_tasks.php", null,
+            JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, "https://fathiy.000webhostapp.com/get_tasks.php", null,
                     jsonArray -> {
                         ArrayList<Tasks> data = new ArrayList<>();
                         ;
