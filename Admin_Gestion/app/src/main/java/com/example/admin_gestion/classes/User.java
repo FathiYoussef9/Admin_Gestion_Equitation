@@ -13,7 +13,7 @@ public class User {
     private String Passwd;
     private int AdminLevel;
     private String LastLoginTime;
-    private boolean isActive;
+    private String isActive;
     private String UserFName;
     private String UserLName;
     private String description;
@@ -63,11 +63,11 @@ public class User {
         LastLoginTime = lastLoginTime;
     }
 
-    public boolean isActive() {
+    public String isActive() {
         return isActive;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(String active) {
         isActive = active;
     }
 
@@ -144,9 +144,9 @@ public class User {
         Passwd=json.getString("userPasswd");
         AdminLevel=json.getInt("adminLevel");
         LastLoginTime=json.getString("lastLoginTime");
-        isActive=json.getBoolean("isActive");
+        isActive=json.getString("isActive");
         UserFName=json.getString("userFName");
-        UserFName=json.getString("userLName");
+        UserLName=json.getString("userLName");
         description=json.getString("description");
         UserType=json.getString("userType");
         userphoto=json.getString("userphoto");
