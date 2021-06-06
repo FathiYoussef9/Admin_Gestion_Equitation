@@ -186,13 +186,13 @@
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpurple"
                             android:padding="10dp"
-                            android:src="@drawable/ic_baseline_access_time_24" />
+                            android:src="@drawable/ic_baseline_people_alt_24" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Emploi du Temps"
+                            android:text="Clients"
                             android:textStyle="bold" />
 
                         <View
@@ -206,7 +206,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Gestion des emplois du temps"
+                            android:text="Gestion des clients"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -234,7 +234,7 @@
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpurple"
                             android:padding="10dp"
-                            android:src="@drawable/ic_baseline_person_add_24" />
+                            android:src="@drawable/ic_baseline_person_24" />
 
                         <TextView
                             android:layout_width="wrap_content"

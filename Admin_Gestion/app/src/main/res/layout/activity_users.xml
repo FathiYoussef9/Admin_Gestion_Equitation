@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:drawablePadding="16dp"
-        android:paddingLeft="120dp"
+        android:paddingLeft="150dp"
         android:paddingTop="16dp"
         android:paddingRight="50dp"
         android:paddingBottom="16dp"
